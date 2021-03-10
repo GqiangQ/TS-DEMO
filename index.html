@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>计算器</title>
+</head>
+<body>
+    <div id="box">
+      <div id="view">
+        dsfjsdiafndsinfd
+      </div>
+      <div id="button-box"></div>
+    </div>
+</body>
+<style>
+  *{
+    padding: 0;
+    margin: 0;
+  }
+    #view{
+      height:calc(100vh - 100vw - 3em ) ;
+      width: 100vw;
+      font-size: 1.8em;
+    }
+  .flex{
+    display: flex;
+    justify-content: space-around;
+    margin-top: .5em;
+  }
+  .flex:last-child{
+    margin-bottom: .5em;
+  }
+  button{
+    color: #fff;
+    font-size: 2em;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 10vw;
+    background: #333333;
+    margin: 0;
+    padding: 0;
+    border: 1px solid transparent; 
+    outline: none;    
+  }
+  body{
+    overflow: hidden;
+    color: aliceblue;
+  }
+  #box{
+    background: #000;
+    max-width:980px;
+    height: 100vh
+  }
+  .bt-0{
+    width: calc(40vw + 20vw / 3);
+  }
+  .bt-C, .bt-N, .bt-B{
+    background: #a5a5a5;
+    color: #0b0b0b;
+  }
+  .flex button:last-child{
+    background: #fe9f06;
+  }
+  button:hover{
+    background: #e2e5e7b9;
+  }
+</style>
+<script src="./main.js"></script>
+</html>
