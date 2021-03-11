@@ -8,9 +8,7 @@
 </head>
 <body>
     <div id="box">
-      <div id="view">
-        dsfjsdiafndsinfd
-      </div>
+      <div id="view"></div>
       <div id="button-box"></div>
     </div>
 </body>
@@ -23,6 +21,10 @@
       height:calc(100vh - 100vw - 3em ) ;
       width: 100vw;
       font-size: 1.8em;
+      overflow-x: hidden;
+      word-break: break-word;
+      padding: .5em;
+      box-sizing: border-box;
     }
   .flex{
     display: flex;
@@ -50,7 +52,7 @@
   }
   #box{
     background: #000;
-    max-width:980px;
+    max-width:540px;
     height: 100vh
   }
   .bt-0{
