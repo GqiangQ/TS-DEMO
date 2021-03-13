@@ -97,7 +97,9 @@
         } catch(err) {
           res = '错误'
         }
+        if (res === Infinity) res = '错误'
         const div = document.createElement('div')
+        console.log(res === Infinity)
         div.className = 'res'
         div.textContent = res.toString()
         view.appendChild(div)
