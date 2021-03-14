@@ -11,5 +11,8 @@
   "scripts": {
     "server": "http-server . -c-l",
     "ts-server": "tsc -w main.ts"
+  },
+  "dependencies": {
+    "@type-challenges/utils": "^0.1.1"
   }
 }
